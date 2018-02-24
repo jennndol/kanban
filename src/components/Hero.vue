@@ -1,14 +1,15 @@
 <template>
-<section class="hero is-info">
-  <div class="hero-body">
-    <div class="container is-centered">
-      <h1 class="title">
-        KANBAN
-      </h1>
-      <h2 class="subtitle">
-        Plan your team work everywhere
-      </h2>
+  <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <span class="logo">Kanban</span>
     </div>
-  </div>
-</section>
+  </nav>
 </template>
+
+<style>
+.logo{
+  font-family: 'Lobster', Georgia, Times, serif;
+  font-size: 30px;
+  margin-left: 2em;
+}
+</style>

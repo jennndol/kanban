@@ -31,7 +31,7 @@
   
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success" v-on:click="addPost">Save changes</button>
+        <button class="button is-success" v-on:click="handler">Save changes</button>
         <button class="button" v-on:click="showModal">Cancel</button>
       </footer>
     </div>
@@ -58,7 +58,6 @@
         this.form.content = null
         this.form.assignedTo = null
         this.$swal("Great!", "Create post success!", "success")
-        this.showModal
       },
       showModal() {
         let element = document.querySelector('#new-task')
@@ -68,6 +67,10 @@
         } else {
           document.querySelector('#new-task').classList.remove('is-active')
         }
+      },
+      handler(){
+        this.addPost()
+        this.showModal()
       }
     }
   }
