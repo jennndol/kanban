@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero/>
+    <Navbar/>
     <command-button/>
     <div class="row content">
     <new-task style="margin-bottom: 3em; text-align:center;"/>      
@@ -25,7 +25,7 @@
 
 <script>
 import NewTask from './NewTask.vue'
-import Hero from './Hero.vue'
+import Navbar from './Navbar.vue'
 import Panel from './Panel.vue'
 import CommandButton from './CommandButton'
 import Footer from './Footer'
@@ -33,7 +33,7 @@ import Footer from './Footer'
 export default {
   name: 'Kanban',
   components: {
-    Hero,
+    Navbar,
     Panel,
     NewTask,
     CommandButton,
